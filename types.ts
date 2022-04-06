@@ -2,7 +2,7 @@ export type addressType = {
     street: string,
     suite: string,
     city: string,
-    zopcode: string,
+    zipcode: string,
 }
 
 export type contactType = {
