@@ -11,7 +11,7 @@ const navigation = [
 ];
 
 const Navbar: FC = () => {
-  const { pathName } = useRouter();
+  const { pathname } = useRouter();
   return (
     <nav className={styles.nav}>
       <div className={styles.logo}>
@@ -20,7 +20,7 @@ const Navbar: FC = () => {
       <div className={styles.links}>
         {navigation.map( ({id, title, path}) => (
           <Link href={path} key={id}>
-            <a className={pathName === path ? styles.active : null }>{title}</a>
+            <a className={pathname === path ? styles.active : null }>{title}</a>
           </Link>
         ) )}
       </div>

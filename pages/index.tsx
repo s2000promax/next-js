@@ -32,7 +32,7 @@ const Home = ({ socials }) => (
     <Head>
       <title>Home</title>
     </Head>
-    <Heading text={'Hello from NextJS'} />
+    <Heading tag={'h1'} text={'Hello from NextJS'} />
     <Socials socials={socials} />
   </div>
 );
